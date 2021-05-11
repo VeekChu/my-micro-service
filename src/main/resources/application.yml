@@ -1,0 +1,15 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: my-micro-service
+  profiles:
+    active: pro
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis:
+  mapper-locations: classpath:mappers/**/*.xml
+  type-aliases-package: com.my.mocroservice.model
+
